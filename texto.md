@@ -21,8 +21,38 @@
 + Baixa integração com tecnologia 
 + Mais de 10 pessoas no time de dados (2 engenheiros, 4 cientistas e 8 analistas, 1 gerente e 1 diretor)
 
+# Visão de Negócio 
 
 
+
+
+# Tecnologia 
+<!-- -->
+
+A primeira grande diferença foi o armazenamento de dados, realizar consultas de dados em banco de dados. Lidar com Base de Dados como Mongo e Elastic Search. Vale a pena pegar todos os dados? Quanto tempo demorar pra fazer a query. Na estatística estamos acostumuados com poucos dados, em formato csv, txt e rds. O arquivo é único, imutável e geralmente recebe um nome genérico. O tamanho do arquivo não é muito grande geralmente menos de 10.000 linhas e no formato tabular (linha e coluna completo).
+
+O bom uso do Banco de Dados implica em sumarizar a informação, fazer transformações e criação de novas variáveis no momento da requisição do dado. e não depois usando `tidyverse`
+
+Outro fator limitante na maneira que a gente manipula o dado é trabalhar somente no formato data.frame. O estatístico gosta do dado tabular, cada linha e colunas são completas. Bases de dados NOSQL e arquivos json te forçam a repensar a estrutura do dado tabular. Basicamente são documentos de chave e valor com n possíveis variáveis por documento e o valor pode ser mais de um array.
+
+O pipeline que conhecemos é o do tidyverse, e um fator comum é colocar todos os passos (import, tidy, transform, model) no mesmo arquivo. Como na graduação aprendemos R, o R não te força guia de estilo, formatação e identação. E como consequência teus scripts passam fácil de 1000 linhas.... 
+
+Uma ótima página para aprender e melhor os códigos em [R][STYLE_GUIDE_R]. Pessoas de computação geralmente vem do python e tem códigos organizados. 
+
+Outro tendâo de Aquiles na base de tecnologia é disponibilizar os resultados, rotinas de análises, como transferir o meu resultado para a área de negócio. 
+
+Por exemplo, git te força a organizar teu código, usar ferramentas de gerenciamento de atividade num fluxo de pipeline como airflow. Como enviar os resultados? como disponibilizar as novas predições?
+
+Uma forma de Praticar essa parte de rotina é praticar scraping. Scraping geralmente o dado será atualizado, se for de uma api, pratica no formato lista, aonde salvar os resultados? Como apresentar os resultados?
+
+Docker - Congelar todo sua aplicacao em uma imagem (Seta sistema operacional, versao do R, e executa o teu script)
+Mlflow - Gerenciar modelos, criar experimentos, salvar o modelo
+Airflow - Agendador Acíclico de tarefa
+Plumber/FastApi = Disponibilizar os resultados em API
+
+
+
+# Ciclos de Atividades james Delivery
 <!-- Ciclos de Atividades --> 
 <!-- Papel do João -->
 <!-- 1¹ Parte -->
@@ -92,33 +122,143 @@ Descritiva -> Diagnóstica -> Preditiva -> Prescritiva
 <!-- O que as outras áreas querem na demanda --> 
 
 
+# Viés do Estatístico 
 
-# Tecnologia 
-<!-- -->
+<!-- Viés de um Estatístico-->
 
-A primeira grande diferença foi o armazenamento de dados, realizar consultas de dados em banco de dados. Lidar com Base de Dados como Mongo e Elastic Search. Vale a pena pegar todos os dados? Quanto tempo demorar pra fazer a query. Na estatística estamos acostumuados com poucos dados, em formato csv, txt e rds. O arquivo é único, imutável e geralmente recebe um nome genérico. O tamanho do arquivo não é muito grande geralmente menos de 10.000 linhas e no formato tabular (linha e coluna completo).
+levar a ferro e fogo, você se vê contra parede, quando os pressuspostos não atendem, deixa de prestar atenção no problema do que  no negócio e só foca em validade estatística. 
+existem etapas de modelagem, não é numa primeira tentativa de modelagem que 'resolve'  
+Aprenda resolver as perguntas já formuladas! Se tornamos escravos do método
+Os exemplos de pesquisa responder um ponto específico e não nos fazem pensar em escalabilidade,
+O estatistico se poupa a entregar a análise apenas dizendo diferença entre as variáveis. A parte mais impactante pra o negócio é o depois, como muda a forma de pensar, abre novas fronteiras de estudo, quais cenários posso antever. 
+Mas quem faz as perguntas?
+Estatísticamente é válido, mas tem sentido pro negócio? 
 
-O bom uso do Banco de Dados implica em sumarizar a informação, fazer transformações e criação de novas variáveis no momento da requisição do dado. e não depois usando `tidyverse`
++ Excesso de pressuposto  <!-- Gráficos plot(m0) -->
++ A entrega, ou resultado final é o Resumo do Modelo <!-- IML -->
++ Realizar a Estatística Descritiva p/direcionar a modelagem e não criar hipóteses. (Gráfico de Densidade)
++ Resolve problemas já formulados!  
 
-Outro fator limitante na maneira que a gente manipula o dado é trabalhar somente no formato data.frame. O estatístico gosta do dado tabular, cada linha e colunas são completas. Bases de dados NOSQL e arquivos json te forçam a repensar a estrutura do dado tabular. Basicamente são documentos de chave e valor com n possíveis variáveis por documento e o valor pode ser mais de um array.
+"Dado que foi capturado o dado "x, y, z" e que queira realizar um estudo de qual variável afeta tal variável.s "
 
-O pipeline que conhecemos é o do tidyverse, e um fator comum é colocar todos os passos (import, tidy, transform, model) no mesmo arquivo. Como na graduação aprendemos R, o R não te força guia de estilo, formatação e identação. E como consequência teus scripts passam fácil de 1000 linhas.... 
+"Dado um estudo clínico em que os pacientes foram submetidos aos seguintes procedimentos, qual a taxa de reicidencia da doença"
 
-Uma ótima página para aprender e melhor os códigos em [R][STYLE_GUIDE_R]. Pessoas de computação geralmente vem do python e tem códigos organizados. 
 
-Outro tendâo de Aquiles na base de tecnologia é disponibilizar os resultados, rotinas de análises, como transferir o meu resultado para a área de negócio. 
+<!-- Casos Análises de Dados -->
 
-Por exemplo, git te força a organizar teu código, usar ferramentas de gerenciamento de atividade num fluxo de pipeline como airflow. Como enviar os resultados? como disponibilizar as novas predições?
+Matriz Curricular: 
+Durante a graduação de Estatística, a partir das matérias do 5 periodo entra a parte da modelagem, que é a parte que a gente aprender diferentes métodos de estimação, para prever e explicar.
+Basicamente aprende quais as motivações se encaixa, geralmente em pesquisa, os métodos de estimação, pressupostos, interpretação e as ramificações. 
 
-Uma forma de Praticar essa parte de rotina é praticar scraping. Scraping geralmente o dado será atualizado, se for de uma api, pratica no formato lista, aonde salvar os resultados? Como apresentar os resultados?
+Porém uma etapa sempre ressaltada, e sem concessão é os pressuspostos. Qualquer análise possui um slide reforça o atendimento aos pressupostos. 
 
-Docker - Congelar todo sua aplicacao em uma imagem (Seta sistema operacional, versao do R, e executa o teu script)
-Mlflow - Gerenciar modelos, criar experimentos, salvar o modelo
-Airflow - Agendador Acíclico de tarefa
-Plumber/FastApi = Disponibilizar os resultados em API
+Como parte do tempo que vivi na graduação, foi ver palestras do LEG e o estatístico desenvolve um desejo para o atendimento de pressuposto, porque tenho validade, para interpretar, prever e prescrever.
 
-# Análise de Dados
+Um vício que o estatístico desenvolve é apenas prestar atenção para os pressuspostos.
 
-Passar pelas matérias da graduação  
+Aprenda resolver as perguntas já formuladas!
 
+O estatistico se poupa a entregar a análise apenas dizendo diferença entre as variáveis. A parte mais impactante pra o negócio é o depois, como muda a forma de pensar, abre novas fronteiras de estudo, quais cenários posso antever. 
+
+A interpretação do resultado é puramente técnica. A saído do modelo, basta para o estatístico. (Saída de Output)
+
+O que o mercado quer, KPI, precisamos entregar valor para os dados.... 
+
+A estatística descritiva é algo direcionado para escolha de modelo. 
+A estatística descritiva permite direcionar e descartar hipótese (alguns exemplos no trampo)
+
+Pra realizar estatística descritiva adequada, precisamos tem um bom leque de gráficos (Recomendação de Leitura)
+
+<!-- Caso Frete -->
+Pergunta aberta: "Precisamos rever o preço do frete do estabelecimento comercial"
+A equipe comercial queria rever o preço do frete de estabelecimentos comerciais ia ganhar mais dinheiro..... 
+
+primeiro ponto  cada etregador 8% da entrega para o james, Logo aumentar o preço seria esse ganho. outro ponto nosso frete é mais barato do que a concorrência. dai criamos um indicador de saude financeira de pedido. 
+(Comissao_Frete + Comissao_Restaurante - Desconto) [-inf, Inf]
+
+Dai agente separou por quantidade de pedidos, quanto mais pedido faço mais eu perco dinheiro. (Crescimento a qualquer custo)
+
+<!-- Caso Opcionais -->
+
+UM problema que surgiu foi, como destacar a falta de opcionais em um bairro. Em outras palavras uma análise descritiva para valores faltantes. Algumas questões, poderia ser um heatMap por Opcional e Nuvem de Palavras por Bairro.
+
+<!-- Caso Presenças do Opcionais-->
+
+Na precificicação de imóveis cade elemento tem uma contribuicao de imovel, no caso casa de boneca estava negativo, então 
+
+
+<!--Frete da Concorrência  -->
+<!-- Criando Cenários -->
+Até 3km... (distancia que não era de rota).. 
+Criamos um crawler que extrai os dados da concorrência (ifood), para analisar o valor do frete. Criamos um modelo com distancia e produto levado. O site do ifood são 5 componentes que explicam o valor do frete, (Distancia, modal, tempo, horario, número de pedidos). 
+
+Com as variáveis criamos cenários, para o nosso elenco de restaurantes, mas se mostrou inviável, pq temos muitos pedidos com ticket baixo e poucos pedidos com ticket alto. 
+
+Mantendo a mesma base de dados, não valia a pena
+
+
+<!-- Mantendo a Graduação de Estatística-->
+
++ Matéria de Empreendedorismo
++ Rotinas Computacionais 
+  
++ Matérias de Análise de Dados (São Fodas)
+
+
+
+class: Top, left
+background-image: url(img/desejo_de_um_estatístico.jpg)
+background-size: cover
+
+## O grande Desejo de um Estatístico é que o modelo atenda os pressupostos
+
+<span style="color:white; font-size: 50px;"> O grande Desejo de um Estatístico é que o modelo atenda os pressupostos  </span>
+
+<!-- Termo CLichẽ--> 
+---
+# Pressuposto de um Modelo 
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width=10}
+
+model <- get_modelo_linear()
+
+performance::check_model(model)
+```
+
+---
+class: center, left
+background-image: url(img/tidyverse_cycle.png)
+background-size: cover
+
++ "Análises que Entreguem Valor para o Cliente"
+
+--- 
+# Explorar a Visualização de Dados 
+
++ Como Representar a Falta de uma Variável (valor)
++ Aumentar o leque de vizualização
++ Criar cenários de Modelos (p-valor)
++ Como explorar a falta de informação?
+
+# Sumamry 
+
+```{r}
+summary(model)
+```
+
+# Explorar o Summary 
+
+```{r, echo = FALSE}
+gg_opcionais <- get_opcionais() 
+```
+
+# Exemplo de KPI 
+
+```{r}
+gg_kpi_negocio <- get_kpi_negocio()
+```
+
+---
+class: middle, center
+background-color:  #E0F2F1
 

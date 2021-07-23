@@ -6,7 +6,7 @@ library(dplyr)
 #----------------------------------------------------------------------------------------------
 #' Modelo 
 
-get_modelo_linear <- function(...){
+get_modelo_com_pressuposto <- function(...){
 
     "
     Cria o modelo linear
@@ -22,6 +22,22 @@ get_modelo_linear <- function(...){
     return(model)
 
 }
+
+get_modelo_sem_pressuposto <- function(...){
+
+    "
+    Cria o modelo linear que os pressupostos não batem
+    "
+
+    x <- rpois(1000, 10)
+    y <- runif(1000, 300, 900)
+
+    model <- lm(y ~ x)  
+
+    return(model)
+
+}
+
 
 #----------------------------------------------------------------------------------------------
 #' Opcionais 
@@ -117,3 +133,4 @@ molde_analise <- function(...){
     return(gg)
 
 }
+

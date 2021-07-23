@@ -20,14 +20,21 @@ source('util.R')
 ```
 
 ---
+# Agenda 
+
++ Gabriel Sartori klostermann
++ Visão de Negócio
++ Arcabouço de Tecnologia
++ Equipe de Ciência de Dados 
++ Viés do Estatístico
+
+---
 # Gabriel Sartori Klostermamn
 
 + Natural de Joinville
-+ 2012 - julho/2018
-+ PET - março/2013 - agosto/2016
-+ LEA - julho/2013 - dezembro/2013
-+ Monitoria de Estatística II - outubro/2012 - março/2013 
-+ Estágio no Ministério Público do Paraná - setembro/2016 - junho/2018 
+
+![UFPR](img/carreira_ufpr.png)
+
 
 <!-- Transformar em Gráfico da linha de Tempo -->
 
@@ -50,6 +57,8 @@ source('util.R')
 + Empresa já iniciando com uma área de dados
 
 + As análises de dados tinha o principal grupo: **Clientes Externos**
+
++ Setembro/2018 - Dezembro/2019
 
 ]
 
@@ -79,42 +88,42 @@ background-size: cover
 
 .pull-right[
 
-+ Empresa desde 2015
-
-+ Empresa comprada pelo GPA em 2018
++ Empresa desde 2015, comprada pelo GPA em 2018
 
 + Final de 2019, empresa iniciando a área de dados 
 
 + Apenas 1 Engenheiro, 1 Cientista e 5 analistas de Dados, 1 Diretor de Dados  
 
 + As análises de dados tinha o principal grupo: **Clientes Internos**
+
++ Tempo de Permanência  Março/2020 - Maio/2021
+
 ]
 
-
 ---
-class: middle, center
+class: Top, Left
 background-image: url(img/james_3_lado.png)
 background-size: cover
-
 
 <!-- #* Diagrama de Venn -->
 
 ---
 class: middle, center
+background-color:  #E0F2F1
+
+# Visão de Negócio
+
+---
+class: top, left 
 background-image: url(img/diagrama_venn.png)
 background-size: cover
 
+# Cientista de Dados 
 
 ---
 class: middle, center
 background-image: url(img/especialidade.png)
 background-size: cover
-
-
----
-class: middle, center
-background-color:  #E0F2F1
-# Visão de Negócio - Mercado Imobiliário
 
 ---
 class: middle, center
@@ -140,22 +149,16 @@ background-size: cover
 ## [ESTUDO DE PRECIFICACAO][5ANDAR_PRECIFICACAO]
 
 ---
-# LInks Úteis
-
-+ [HUB_IMOBILARIO][HUB_IMOBILARIO]
+# Links Úteis Mercado Imobiliário
+ 
++ [HUB_IMOBILIARIO][HUB_IMOBILIARIO]
 + [5ANDAR][5ANDAR]
 + [LOFT][LOFT]
 
 ---
-class: middle, center
-background-color:  #E0F2F1
-
-# Visão de Negócio - Aplicativo de Comida 
-
----
 class: Top, left
-background-image: url(img/rappi.png)
-background-size: cover
+background-image: url(img/rappi_logo.png)
+background-size: contain
 
 ## [MAPA][RAPPI_MAPA]
 
@@ -164,7 +167,7 @@ class: Top, left
 background-image: url(img/delivery_much.png)
 background-size: contain
 
-## [DELIVERY_MUCH][DELIVERY_MUCH]
+## [Consumo Online][DELIVERY_MUCH]
 
 ---
 # LInks Úteis 
@@ -196,11 +199,10 @@ background-size: cover
 ## [Cansei de Ser Gato][PETZ]
 
 ---
-class: center, middle
-background-image: url(https://w.wallhaven.cc/full/nr/wallhaven-nr2p17.jpg)
-background-size: cover
+class: middle, center
+background-color:  #E0F2F1
 
-<span style="color:white; font-size: 60px; font-weight: bold;"> Tecnologia  </span>
+# Tecnologia
 
 ---
 # Banco de Dados 
@@ -215,14 +217,18 @@ background-size: cover
 .pull-right[
 
 + Tempo de aprendizagem da linguagem da consulta 
+{{content}}
+] 
 
 --
 + Quanto tempo demoro para extrair os dados?
 
 + Quais pré-processamento realizo na extração?
+{{content}}
 
-]
-
+--
++ Migrando tudo para DataLake
+{{content}}
 
 ---
 # "Banco de Dados" em Estatística
@@ -271,6 +277,8 @@ background-size: cover
 
 .pull-left[
 
++ Mundo TidyVerse
+
 ![R_directory](img/tidyverse_cycle.png)
 
 ]
@@ -302,6 +310,8 @@ background-size: cover
 
 + [GITHUB][GITHUB]: Versionamento de Código
 
++ [GITHUB_ACTIONS][GITHUB_ACTIONS]: Automatizar as ações do github
+
 + [Docker][Docker]: Congelar todo sua aplicacao em uma imagem (Seta sistema operacional, versao do R, e executa o teu script)
 
 + [Airflow][AIRFLOW]: Agendador Acíclico de tarefa, principalmente ETL
@@ -311,6 +321,9 @@ background-size: cover
 + [Plumber][PLUMBER]:Disponibilizar os resultados em API
 
 + [Shiny Proxy][SHINY PROXY]
+
++ [AWS][AWS]: Alugar servidor, constuir pipeline de dados, executar scripts
+
 
 ---
 
@@ -330,62 +343,10 @@ background-size: cover
 
 + [HTTR][HTTR]
 
----
-class: Top, left
-background-image: url(img/desejo_de_um_estatístico.jpg)
-background-size: cover
-
-## O grande Desejo de um Estatístico é que o modelo atenda os pressupostos
-
-<span style="color:white; font-size: 50px;"> O grande Desejo de um Estatístico é que o modelo atenda os pressupostos  </span>
-
-<!-- Termo CLichẽ--> 
----
-# Pressuposto de um Modelo 
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width=10}
-
-model <- get_modelo_linear()
-
-performance::check_model(model)
-```
-
----
-class: center, left
-background-image: url(img/tidyverse_cycle.png)
-background-size: cover
-
-+ "Análises que Entreguem Valor para o Cliente"
-
---- 
-# Explorar a Visualização de Dados 
-
-+ Como Representar a Falta de uma Variável (valor)
-+ Aumentar o leque de vizualização
-+ Criar cenários de Modelos (p-valor)
-+ Como explorar a falta de informação?
-
-# Sumamry 
-
-```{r}
-summary(model)
-```
-
-# Explorar o Summary 
-
-```{r, echo = FALSE}
-gg_opcionais <- get_opcionais() 
-```
-
-# Exemplo de KPI 
-
-```{r}
-gg_kpi_negocio <- get_kpi_negocio()
-```
 
 ---
 class: middle, center
-background-color:  #E0F2F1
+background-color: #E0F2F1
 
 # Equipe de Dados
 
@@ -527,11 +488,12 @@ molde_analise()
 ---
 # Aprendizados do processo
 
+
++ A equipe de negócio queria todos os dados, para realizar estudos próprios
+
 + As demandas do time de Análise eram muitas vezes Consultas ao Banco
 
 + A hipótese que ele quer avaliar não tem o dado
-
-+ A equipe de negócio queria todos os dados, para realizar estudos próprios
 
 + Métricas para confirmar o "bom" rendimento da equipes
 
@@ -548,26 +510,77 @@ molde_analise()
 
   + Quantidade de Horas ganha com automatização
 
-  + Qual influencia do novo modelo nas métricas de negócio (frete)
+  + Qual influencia do novo modelo nas métricas de negócio?
 
-  + Hipótetes Validadas   
+  + Hipótetes Validadas 
 
 + Velocidade na criação das apresentações
 
-+ Canvas de Projeto 
-
+ 
+---
 # Agile Data Science 
 
 + Ciência de Dados é mais pesquisa do que Desenvolvimento
 
+--
 + Canvas de [Machine Learning][CANVAS_ML]
 
++ Modelo de equipe [Creditas]
+
++ Modelo de equipe [Olist]
+
++ Modelo de equipe [Nubank]
+
+---
+class: middle, center
+background-color:  #E0F2F1
+
+# Viés do Estatístico
+
+---
+# Cegueira do Pressuposto 
+
++ O que eu preciso fazer para tornar o modelo válido?
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width=8}
+
+model_sem <- get_modelo_sem_pressuposto()
+performance::check_model(model_sem)
+```
 
 
+---
+# O resultado termina no Resumo do Modelo 
 
-<!-- Calcanhar de aquiles--> 
+```{r}
+model_com |> summary()
+```
 
+---
+# Estatística Descritiva direcionada a Modelagem 
 
+![Arquitetura](img/viz_density.png)
+
++ Quem tem distribuição normal?, Qual a assimetria, curtose da distribuição?
+
+---
+# Resolve problemas já formulados!  
+
++ "Dado que foi capturado o dado "x, y, z" e que queira realizar um estudo de qual variável afeta tal variável.s "
+
++ "Dado um estudo clínico em que os pacientes foram submetidos aos seguintes procedimentos, qual a taxa de reicidencia da doença"
+
+--
++ Escravo do Método
+
+---
+# Matrix Curricular 
+
+<img src="img/grade_estatistica.jpg" alt="Upside-down sloths are so cute", width = "55%">
+
++ Incluir Matéria de Empreendedorismo  (6º Período)
+
++ Incluir Matéria de Rotinas Computacionais (5° Rotinas Computacionais)
 
 
 <!-- Links  -->
@@ -618,8 +631,13 @@ molde_analise()
 [DOCKER]: https://docker-curriculum.com/#introduction
 [SHINY PROXY]: https://www.openanalytics.eu/tags/shinyproxy/
 [GITHUB]: https://guides.github.com/activities/hello-world/
+[GITHUB_ACTIONS]: https://github.com/features/actions
 [PLUMBER]: https://www.rplumber.io/
 
 <!-- Time de Ciência de Dados --> 
 [SCRUM]: https://scrumguides.org/docs/scrumguide/v1/Scrum-Guide-Portuguese-BR.pdf
 [CANVAS_ML]: https://www.ownml.co/machine-learning-canvas
+
+[Creditas]: https://medium.com/creditas-tech/como-dar-mais-agilidade-nas-entregas-do-time-de-data-science-9003a1e6c898
+[Olist]: https://medium.com/@andresionek91/como-estruturar-uma-equipe-de-an%C3%A1lise-de-dados-em-uma-startup-parte-1-509a9c65cfe2
+[NUBANK]: https://www.youtube.com/watch?v=4PvqfLy3_TA
