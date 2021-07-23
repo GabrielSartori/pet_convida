@@ -23,9 +23,9 @@ source('util.R')
 # Agenda 
 
 + Gabriel Sartori klostermann
++ Experiência Equipe de Ciência de Dados 
 + Visão de Negócio
 + Arcabouço de Tecnologia
-+ Equipe de Ciência de Dados 
 + Viés do Estatístico
 
 ---
@@ -110,239 +110,6 @@ background-size: cover
 ---
 class: middle, center
 background-color:  #E0F2F1
-
-# Visão de Negócio
-
----
-class: top, left 
-background-image: url(img/diagrama_venn.png)
-background-size: cover
-
-# Cientista de Dados 
-
----
-class: middle, center
-background-image: url(img/especialidade.png)
-background-size: cover
-
----
-class: middle, center
-background-image: url(img/feeder.png)
-background-size: cover
-
----
-class: Top, left
-background-image: url(img/loft_ciencia_de_dados.png)
-background-size: cover
-
-## [LOFT Ecossistema][LOFT_PRODUTOS_DS]
-
-<br><br><br><br>
-
-## [LOFT Precificação][LOFT_REGRESSAO_INTERVALAR]
-
----
-class: Top, left
-background-image: url(img/5ANDAR.jpg)
-background-size: cover
-
-## [ESTUDO DE PRECIFICACAO][5ANDAR_PRECIFICACAO]
-
----
-# Links Úteis Mercado Imobiliário
- 
-+ [HUB_IMOBILIARIO][HUB_IMOBILIARIO]
-+ [5ANDAR][5ANDAR]
-+ [LOFT][LOFT]
-
----
-class: Top, left
-background-image: url(img/rappi_logo.png)
-background-size: contain
-
-## [MAPA][RAPPI_MAPA]
-
----
-class: Top, left
-background-image: url(img/delivery_much.png)
-background-size: contain
-
-## [Consumo Online][DELIVERY_MUCH]
-
----
-# LInks Úteis 
-
-+ [IFOOD][IFOOD]
-+ [RAPPI][RAPPI]
-+ [AIQFOME][AIQFOME]
-+ [DELIVERY_MUCH][DELIVERY_MUCH]
-
-<!-- James não faz publicidade no Site--> 
-
----
-class: middle, center
-background-color:  #E0F2F1
-
-# Visão de Negócio - Empresa
-
----
-class: Top, left
-background-image: url(img/brazil_journal.png)
-background-size: cover
-
-## [BRAZIL_JOURNAL][BRAZIL_JOURNAL]
-
-## [PGB_2021][PESQUISA_GAMER]
-
-## [150_mil_modelos][150_mil_modelos]
-
-## [Cansei de Ser Gato][PETZ]
-
----
-class: middle, center
-background-color:  #E0F2F1
-
-# Tecnologia
-
----
-# Banco de Dados 
-
-.pull-left[
-![MONGO](img/mongo_db.png)
-![ElASTICSEARCH](img/elastic_search.png)
-<!-- ![ElASTICSEARCH](img/elastic_search.png) -->
-]
-
---
-.pull-right[
-
-+ Tempo de aprendizagem da linguagem da consulta 
-{{content}}
-] 
-
---
-+ Quanto tempo demoro para extrair os dados?
-
-+ Quais pré-processamento realizo na extração?
-{{content}}
-
---
-+ Migrando tudo para DataLake
-{{content}}
-
----
-# "Banco de Dados" em Estatística
-
-+ Arquivo txt, csv, rds
-
-+ Arquivo único 
-
-+ Dados Tabulares 
-
-+ Menos de 10.000 linhas
-
---
-+ Vício em DataFrame 
-
----
-# Script de Análise de Dados  
-
-
-.pull-left[
-![R_directory](img/r_directory.png)
-]
-
---
-
-.pull-right[
-
-- nomes das variáveis sem padrao...(df_1, x, t, c, z10)
-
-- Não tem um arquivo próprio de função
-
-- Mais de 1000 linhas de código
-
-- Sem identação em function, for, if, while 
-{{content}}
-]
-
---
-
-- [Guia de estilo][STYLE_GUIDE_R] 
-{{content}} 
-
-
----
-# Pipeline de Dados 
-
-.pull-left[
-
-+ Mundo TidyVerse
-
-![R_directory](img/tidyverse_cycle.png)
-
-]
-
---
-.pull-right[
-![Arquitetura](img/arquitetura_bd.png)
-]  
-
-
----
-# Integração Contínua e Desenvolvimento Contínuo
-
---
-.pull-left[
-
-![CICD](img/ci_cd.png)
-
-]
-
--- 
-.pull-right[
-
-+ .Rmd, .R como faço para passar a diante? 
-{{content}}
-]
-
---
-
-+ [GITHUB][GITHUB]: Versionamento de Código
-
-+ [GITHUB_ACTIONS][GITHUB_ACTIONS]: Automatizar as ações do github
-
-+ [Docker][Docker]: Congelar todo sua aplicacao em uma imagem (Seta sistema operacional, versao do R, e executa o teu script)
-
-+ [Airflow][AIRFLOW]: Agendador Acíclico de tarefa, principalmente ETL
-
-+ [Mlflow][MLFLOW]: Gerenciar modelos, criar experimentos, salvar o modelo para predição em batch
-
-+ [Plumber][PLUMBER]:Disponibilizar os resultados em API
-
-+ [Shiny Proxy][SHINY PROXY]
-
-+ [AWS][AWS]: Alugar servidor, constuir pipeline de dados, executar scripts
-
-
----
-
-# Pratique com Scraping
-
-+ Arquivos Json 
-
-+ Manipular Listas
-
-+ Dados que Atualizam
-
-+ Interargir com [API][API]
-
---
-
-+ [SCRAPY][SCRAPY]
-
-+ [HTTR][HTTR]
-
 
 ---
 class: middle, center
@@ -535,7 +302,248 @@ molde_analise()
 class: middle, center
 background-color:  #E0F2F1
 
+# Visão de Negócio
+
+---
+class: top, left 
+background-image: url(img/diagrama_venn.png)
+background-size: cover
+
+# Cientista de Dados 
+
+---
+class: middle, center
+background-image: url(img/especialidade.png)
+background-size: cover
+
+---
+class: middle, center
+background-image: url(img/feeder.png)
+background-size: cover
+
+---
+class: Top, left
+background-image: url(img/loft_ciencia_de_dados.png)
+background-size: cover
+
+## [LOFT Ecossistema][LOFT_PRODUTOS_DS]
+
+<br><br><br><br>
+
+## [LOFT Precificação][LOFT_REGRESSAO_INTERVALAR]
+
+---
+class: Top, left
+background-image: url(img/5ANDAR.jpg)
+background-size: cover
+
+## [ESTUDO DE PRECIFICACAO][5ANDAR_PRECIFICACAO]
+
+---
+# Links Úteis Mercado Imobiliário
+ 
++ [HUB_IMOBILIARIO][HUB_IMOBILIARIO]
++ [5ANDAR][5ANDAR]
++ [LOFT][LOFT]
+
+---
+class: Top, left
+background-image: url(img/rappi_logo.png)
+background-size: contain
+
+## [MAPA][RAPPI_MAPA]
+
+---
+class: Top, left
+background-image: url(img/delivery_much.png)
+background-size: contain
+
+## [Consumo Online][DELIVERY_MUCH]
+
+---
+# LInks Úteis 
+
++ [IFOOD][IFOOD]
++ [RAPPI][RAPPI]
++ [AIQFOME][AIQFOME]
++ [DELIVERY_MUCH][DELIVERY_MUCH]
+
+<!-- James não faz publicidade no Site--> 
+
+---
+class: middle, center
+background-color:  #E0F2F1
+
+# Visão de Negócio - Empresa
+
+---
+class: Top, left
+background-image: url(img/brazil_journal.png)
+background-size: cover
+
+## [BRAZIL_JOURNAL][BRAZIL_JOURNAL]
+
+## [PGB_2021][PESQUISA_GAMER]
+
+## [150_mil_modelos][150_mil_modelos]
+
+## [Cansei de Ser Gato][PETZ]
+
+---
+class: middle, center
+background-color:  #E0F2F1
+
+# Tecnologia
+
+---
+# Banco de Dados 
+
+.pull-left[
+![MONGO](img/mongo_db.png)
+![ElASTICSEARCH](img/elastic_search.png)
+<!-- ![ElASTICSEARCH](img/elastic_search.png) -->
+]
+
+--
+.pull-right[
+
++ Tempo de aprendizagem da linguagem da consulta 
+{{content}}
+] 
+
+--
++ Quanto tempo demoro para extrair os dados?
+
++ Quais pré-processamento realizo na extração?
+{{content}}
+
+--
++ Migrando tudo para DataLake
+{{content}}
+
+---
+# "Banco de Dados" em Estatística
+
++ Arquivo txt, csv, rds
+
++ Arquivo único 
+
++ Dados Tabulares 
+
++ Menos de 10.000 linhas
+
+--
++ Vício em DataFrame 
+
+---
+# Script de Análise de Dados  
+
+.pull-left[
+![R_directory](img/r_directory.png)
+]
+
+--
+
+.pull-right[
+
+- nomes das variáveis sem padrao...(df_1, x, t, c, z10)
+
+- Não tem um arquivo próprio de função
+
+- Mais de 1000 linhas de código
+
+- Sem identação em function, for, if, while 
+{{content}}
+]
+
+--
+
+- [Guia de estilo][STYLE_GUIDE_R] 
+{{content}} 
+
+
+---
+# Pipeline de Dados 
+
+.pull-left[
+
++ Mundo TidyVerse
+
+![R_directory](img/tidyverse_cycle.png)
+
+]
+
+--
+.pull-right[
+![Arquitetura](img/arquitetura_bd.png)
+]  
+
+
+---
+# Integração Contínua e Desenvolvimento Contínuo
+
+--
+.pull-left[
+
+![CICD](img/ci_cd.png)
+
+]
+
+-- 
+.pull-right[
+
++ .Rmd, .R como faço para passar a diante? 
+{{content}}
+]
+
+--
+
++ [GITHUB][GITHUB]: Versionamento de Código
+
++ [GITHUB_ACTIONS][GITHUB_ACTIONS]: Automatizar as ações do github
+
++ [Docker][Docker]: Congelar todo sua aplicacao em uma imagem (Seta sistema operacional, versao do R, e executa o teu script)
+
++ [Airflow][AIRFLOW]: Agendador Acíclico de tarefa, principalmente ETL
+
++ [Mlflow][MLFLOW]: Gerenciar modelos, criar experimentos, salvar o modelo para predição em batch
+
++ [Plumber][PLUMBER]:Disponibilizar os resultados em API
+
++ [Shiny Proxy][SHINY PROXY]
+
++ [AWS][AWS]: Alugar servidor, constuir pipeline de dados, executar scripts
+
+
+---
+
+# Pratique com Scraping
+
++ Arquivos Json 
+
++ Manipular Listas
+
++ Dados que Atualizam
+
++ Interargir com [API][API]
+
+--
+
++ [SCRAPY][SCRAPY]
+
++ [HTTR][HTTR]
+
+
 # Viés do Estatístico
+
+---
+class: Left, middle
+background-image: url(img/the_office.jpg)
+background-size: cover
+
+<span style="color:white; font-size: 50px; font-weight: bold;"> "Queremos KPI"  </span>
+<br><br>
+<span style="color:white; font-size: 50px; font-weight: bold;">  "Precisamos Entregar Valor para o Cliente" </span>
 
 ---
 # Cegueira do Pressuposto 
@@ -548,12 +556,11 @@ model_sem <- get_modelo_sem_pressuposto()
 performance::check_model(model_sem)
 ```
 
-
 ---
 # O resultado termina no Resumo do Modelo 
 
 ```{r}
-model_com |> summary()
+model_sem |> summary()
 ```
 
 ---
@@ -620,11 +627,9 @@ model_com |> summary()
 [STYLE_GUIDE_R]: http://adv-r.had.co.nz/Style.html
 
 <!-- Data Viz-->
-
 [DATAVIZ]: https://clauswilke.com/dataviz/
 
 <!-- Ferramentas -->
-
 [AIRFLOW]: https://airflow.apache.org/
 [MLFLOW]: https://mlflow.org/
 [AWS]: https://aws.amazon.com/pt/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=categories%23compute&trk=ps_a134p000006gXvEAAU&trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_BR&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=BR&sc_geo=LATAM&sc_outcome=acq&sc_detail=aws%20cloud&sc_content=Cloud%20Hosting_e&sc_matchtype=e&sc_segment=490489331981&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Cloud%20Computing|Solution|BR|EN|Text&s_kwcid=AL!4422!3!490489331981!e!!g!!aws%20cloud&ef_id=CjwKCAjwi9-HBhACEiwAPzUhHFxe70bIbjxA4L_YUzIKT5JJoRi_logdXW_brMUIbf0DQc7SYONXDBoCRGsQAvD_BwE:G:s&s_kwcid=AL!4422!3!490489331981!e!!g!!aws%20cloud
