@@ -109,10 +109,6 @@ background-size: cover
 
 ---
 class: middle, center
-background-color:  #E0F2F1
-
----
-class: middle, center
 background-color: #E0F2F1
 
 # Equipe de Dados
@@ -533,6 +529,9 @@ background-color:  #E0F2F1
 
 + [HTTR][HTTR]
 
+---
+class: middle, center
+background-color: #E0F2F1
 
 # Viés do Estatístico
 
